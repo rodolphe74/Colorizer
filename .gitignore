@@ -1,0 +1,10 @@
+/app/build
+/app/src/main/obj
+/app/src/main/libs
+/app/src/main/jniLibs
+/gradle
+/openCVLibrary342
+/.gradle
+/.idea
+/neural/colorization_release_v2.caffemodel
+

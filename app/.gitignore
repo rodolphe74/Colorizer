@@ -1,0 +1,5 @@
+/build
+/gradle
+/src/main/obj
+/src/main/libs
+/src/main/jniLibs
