@@ -4,6 +4,7 @@ An Android Studio project aimed at colorizing black and white pictures.
 The result is not always as it should be in reality and that is what is fun.
 
 The application works with neural network to infer colors. It uses the OpenCV library for that. The "thinking part" is written in native c++ android sdk with the help of JNI.
+OpenCV for android is available [here](https://sourceforge.net/projects/opencvlibrary/files/opencv-android/3.4.3/).
 
 More informations on how the colorization process works here :
 * [Richard Zhang - Colorful Image Colorization](http://videolectures.net/eccv2016_zhang_image_colorization/)
