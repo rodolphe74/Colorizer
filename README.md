@@ -23,5 +23,5 @@ First, OpenCV4 native shared libs are needed for the application to work :
 
 *  for each architecture, build the shared libs : `make`
 *  for each architecture, copy the resulting shared lib inside the `app/src/main/libs` folder of the Colorizer project
-*  adapt OpenCV includes and shared libs paths of android.mk makefile in Colorizer project
+*  adapt OpenCV includes and shared libs paths of `android.mk` makefile in Colorizer project
 *  it's now possible to build and run the Colorizer project under Android Studio.
