@@ -1,5 +1,7 @@
 ## Colorizer
 
+### Presentation
+
 An Android Studio project aimed at colorizing black and white pictures.
 The result is not always as it should be in reality and that is what is fun.
 
@@ -12,3 +14,5 @@ More informations on how the colorization process works here :
 
 ### Compilation
 
+First, opencv4 native shared libs are needed for the application to work :
+*  get opencv : `git clone https://github.com/opencv/opencv`
