@@ -8,6 +8,7 @@
 #include "com_rodolphe_colorizer_OpenCVTasks.h"
 
 #include <opencv2/opencv.hpp>
+#include <opencv2/imgcodecs/imgcodecs_c.h>
 
 using namespace cv;
 using namespace cv::dnn;
