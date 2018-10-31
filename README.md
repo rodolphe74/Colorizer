@@ -14,12 +14,14 @@ More informations on how the colorization process works here :
 
 ### Compilation
 
-First, opencv4 native shared libs are needed for the application to work :
-*  get opencv : `git clone https://github.com/opencv/opencv`
+First, OpenCV4 native shared libs are needed for the application to work :
+*  get OpenCV : `git clone https://github.com/opencv/opencv`
 *  create a build directory inside opencv folder and cd to it
 *  for each android architecture (x86, armeabi-v7a, arm64-v8a), use the following command to create the makefile :
 
 `cmake -DBUILD_SHARED_LIBS=ON -DINSTALL_ANDROID_EXAMPLES=ON -DANDROID_EXAMPLES_WITH_LIBS=ON -DBUILD_EXAMPLES=ON -DBUILD_DOCS=OFF -DWITH_OPENCL=OFF -DWITH_IPP=ON -DCMAKE_TOOLCHAIN_FILE=${ANDROID_NDK}/build/cmake/android.toolchain.cmake -DANDROID_TOOLCHAIN=clang "-DANDROID_STL=c++_shared" -DANDROID_ABI=arm64-v8a -DANDROID_SDK_TARGET=18 -DPYTHON_INCLUDE_DIR=/usr/include/python2.7 -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython2.7.so.1.0 -DBUILD_JAVA=OFF -DBUILD_ANDROID_EXAMPLES=OFF ../`
 
-*  for each architecure, build the shared libs : `make`
-*  for each archtecture, copy the resulting shared lib inside the `app/src/main/libs` folder of the Colorizer project
+*  for each architecture, build the shared libs : `make`
+*  for each architecture, copy the resulting shared lib inside the `app/src/main/libs` folder of the Colorizer project
+*  adapt OpenCV includes and shared libs paths of android.mk makefile in Colorizer project
+*  it's now possible to build and run the Colorizer project under Android Studio.
